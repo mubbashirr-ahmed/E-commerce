@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/ic_verification" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="33dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Enter the code sent to your phone"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.chaos.view.PinView
+                    android:id="@+id/pinView"
+                    style="@style/PinWidget.PinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:cursorVisible="true"
+                    android:hint="****"
+                    android:inputType="number"
+                    android:itemBackground="@drawable/pin_view_bg"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:cursorColor="@color/black"
+                    app:cursorWidth="2dp"
+                    app:hideLineWhenFilled="true"
+                    app:itemCount="6"
+                    app:itemHeight="48dp"
+                    app:itemRadius="10dp"
+                    app:itemSpacing="10dp"
+                    app:itemWidth="48dp"
+                    app:lineColor="@color/white"
+                    app:lineWidth="2dp"
+                    app:viewType="rectangle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="33dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Did not receive a code?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_resend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="33dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/circular_ripple"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="4dp"
+                    android:text="R E S E N D"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="80dp"
+                    android:layout_marginVertical="40dp"
+                    app:cardBackgroundColor="@color/purple_500"
+                    app:cardCornerRadius="30dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_done"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/purple_500"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:minHeight="35dp"
+                        android:text="Done"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

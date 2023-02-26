@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Books and Books</string>
+
+    <string name="facebook_app_id">2839229453045224</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="help">Help</string>
+    <string name="your_name">Your name</string>
+    <string name="your_email">Your email</string>
+    <string name="problem">Problem</string>
+    <string name="send">Send</string>
+    <string name="we_are_available_on">We Are Available On</string>
+
+
+</resources>

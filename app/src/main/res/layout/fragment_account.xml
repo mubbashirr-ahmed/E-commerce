@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    app:cardCornerRadius="50dp"
+                    app:cardElevation="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/profile" />
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="-27dp"
+                    android:elevation="5dp"
+                    android:src="@drawable/ic_camera_profile" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="32dp"
+                android:background="?attr/actionBarItemBackground"
+                android:fontFamily="@font/poppins"
+                android:text="Name"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/eet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="24dp"
+                android:background="@drawable/et_bg_sign_in"
+                android:drawableEnd="@drawable/ic_edit"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:minHeight="45dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor_pink"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:background="?attr/actionBarItemBackground"
+                android:fontFamily="@font/poppins"
+                android:text="Email"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/eet_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="24dp"
+                android:background="@drawable/et_bg_sign_in"
+                android:drawableEnd="@drawable/ic_edit"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:minHeight="45dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor_pink"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="24dp"
+                        android:background="?attr/actionBarItemBackground"
+                        android:fontFamily="@font/poppins"
+                        android:text="City"
+                        android:textColor="@color/textColor" />
+
+                    <EditText
+                        android:id="@+id/eet_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="24dp"
+                        android:background="@drawable/et_bg_sign_in"
+                        android:drawableEnd="@drawable/ic_edit"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:minHeight="45dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/textColor"
+                        android:textCursorDrawable="@drawable/cursor_pink"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="24dp"
+                        android:background="?attr/actionBarItemBackground"
+                        android:fontFamily="@font/poppins"
+                        android:text="Country"
+                        android:textColor="@color/textColor" />
+
+                    <EditText
+                        android:id="@+id/eet_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="24dp"
+                        android:background="@drawable/et_bg_sign_in"
+                        android:drawableEnd="@drawable/ic_edit"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:minHeight="45dp"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/cursor_pink"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="10dp"
+                android:background="?attr/actionBarItemBackground"
+                android:fontFamily="@font/poppins"
+                android:text="Street Address"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/eet_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="24dp"
+                android:background="@drawable/et_bg_sign_in"
+                android:drawableEnd="@drawable/ic_edit"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:minHeight="45dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor_pink"
+                android:textSize="15dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="26dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/purple_500"
+                    android:focusable="true"
+                    android:fontFamily="@font/segoeui_bold"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:paddingHorizontal="90dp"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
